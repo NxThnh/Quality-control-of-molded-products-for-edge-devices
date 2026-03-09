@@ -108,8 +108,8 @@ class MobileNetClassifier:
 
 # ====== Main Application ======
 print("Loading models...")
-yolo = YOLODetector("C:\\Users\\hn745\\Documents\\DAT301m\\Project\\yolo+mobilenetV2\\best.onnx", conf_threshold=0.55)
-classifier = MobileNetClassifier("C:\\Users\\hn745\\Documents\\DAT301m\\Project\\model_quantized.tflite")
+yolo = YOLODetector(r"yolo+mobilenetV2\best.onnx", conf_threshold=0.55)
+classifier = MobileNetClassifier(r"yolo+mobilenetV2\mobilenetv2_optimized.tflite")
 print("✓ Models loaded successfully\n")
 
 # Open webcam
