@@ -95,12 +95,9 @@ class MobileNetClassifier:
 
 # ====== Load models ======
 print("Loading models...")
-yolo = YOLODetector(
-    r"C:\Users\hn745\Documents\DAT301m\Project\yolo+mobilenetV2\best.onnx"
-)
-classifier = MobileNetClassifier(
-    r"C:\Users\hn745\Documents\DAT301m\Project\yolo+mobilenetV2\mobilenetv2_optimized.tflite"
-)
+yolo = YOLODetector(r"best.onnx")
+classifier = MobileNetClassifier(r"mobilenetv2_optimized.tflite")
+
 print("Models loaded\n")
 
 cap = cv2.VideoCapture(0)

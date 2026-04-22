@@ -133,7 +133,7 @@ if run_camera:
     yolo, classifier = load_models()
     cap = cv2.VideoCapture(0)
     
-    DET_TRIGGER   = 0.80   
+    DET_TRIGGER   = 0.70   
     STABLE_SEC    = 2.0    
     COOLDOWN_SEC  = 2.0    
 
